@@ -1,0 +1,33 @@
+17:34:15 **** Build of configuration Debug for project tp4Lib ****
+make all 
+Building file: ../PersonneAbsenteException.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"PersonneAbsenteException.d" -MT"PersonneAbsenteException.o" -o "PersonneAbsenteException.o" "../PersonneAbsenteException.cpp"
+Finished building: ../PersonneAbsenteException.cpp
+ 
+Building file: ../PersonneDejaPresentException.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"PersonneDejaPresentException.d" -MT"PersonneDejaPresentException.o" -o "PersonneDejaPresentException.o" "../PersonneDejaPresentException.cpp"
+Finished building: ../PersonneDejaPresentException.cpp
+ 
+Building file: ../PersonneException.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"PersonneException.d" -MT"PersonneException.o" -o "PersonneException.o" "../PersonneException.cpp"
+Finished building: ../PersonneException.cpp
+ 
+Building target: libtp4Lib.a
+Invoking: GCC Archiver
+ar -r  "libtp4Lib.a"  ./PersonneAbsenteException.o ./PersonneDejaPresentException.o ./PersonneException.o   
+ar: création de libtp4Lib.a
+Finished building target: libtp4Lib.a
+ 
+17:38:09 **** Incremental Build of project tp4GUI ****
+make debug 
+/usr/lib/i386-linux-gnu/qt4/bin/qmake CONFIG+=debug_and_release -o Makefile tp4GUI.pro
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/tp4/tp4GUI »
+make[1]: rien à faire pour « first ».
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/tp4/tp4GUI »
+17:38:10 **** Incremental Build of configuration Debug for project tp4Lib ****
+make all 
+make: rien à faire pour « all ».

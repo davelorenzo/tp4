@@ -1,0 +1,13 @@
+TEMPLATE = app
+TARGET = tp4GUI 
+
+QT        += core gui 
+
+HEADERS   += tp4gui.h
+SOURCES   += main.cpp \
+    tp4gui.cpp
+FORMS     += tp4gui.ui    
+RESOURCES +=
+
+LIBS += "../tp4Lib/Debug/libtp4Lib.a"
+INCLUDEPATH += "../tp4Lib/."

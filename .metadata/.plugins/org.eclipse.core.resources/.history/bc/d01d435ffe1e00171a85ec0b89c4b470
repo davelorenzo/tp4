@@ -1,0 +1,17 @@
+/*
+ * PersonneDejaPresentException.h
+ *
+ *  Created on: 2017-04-11
+ *      Author: etudiant
+ */
+
+#ifndef PERSONNEDEJAPRESENTEXCEPTION_H_
+#define PERSONNEDEJAPRESENTEXCEPTION_H_
+
+class PersonneDejaPresentException {
+public:
+	PersonneDejaPresentException();
+	virtual ~PersonneDejaPresentException();
+};
+
+#endif /* PERSONNEDEJAPRESENTEXCEPTION_H_ */

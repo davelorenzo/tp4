@@ -1,0 +1,10 @@
+17:38:09 **** Incremental Build of project tp4GUI ****
+make debug 
+/usr/lib/i386-linux-gnu/qt4/bin/qmake CONFIG+=debug_and_release -o Makefile tp4GUI.pro
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/tp4/tp4GUI »
+make[1]: rien à faire pour « first ».
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/tp4/tp4GUI »
+
+17:38:09 Build Finished (took 529ms)
+

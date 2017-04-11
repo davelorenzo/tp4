@@ -1,0 +1,17 @@
+/*
+ * PersonneAbsenteException.h
+ *
+ *  Created on: 2017-04-11
+ *      Author: etudiant
+ */
+
+#ifndef PERSONNEABSENTEEXCEPTION_H_
+#define PERSONNEABSENTEEXCEPTION_H_
+
+class PersonneAbsenteException {
+public:
+	PersonneAbsenteException();
+	virtual ~PersonneAbsenteException();
+};
+
+#endif /* PERSONNEABSENTEEXCEPTION_H_ */

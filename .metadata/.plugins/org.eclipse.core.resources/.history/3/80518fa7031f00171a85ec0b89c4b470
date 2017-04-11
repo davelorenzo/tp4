@@ -1,0 +1,18 @@
+#include "tp4gui.h"
+#include "Joueur.h"
+#include "Entraineur.h"
+#include "Date.h"
+
+using namespace tp;
+
+tp4GUI::tp4GUI(QWidget *parent)
+    : QMainWindow(parent)
+{
+	ui.setupUi(this);
+	Joueur* joueur1 = new Joueur();
+}
+
+tp4GUI::~tp4GUI()
+{
+
+}

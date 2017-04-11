@@ -1,0 +1,16 @@
+#include "tp4gui.h"
+#include "Joueur.h"
+#include "Entraineur.h"
+#include "Date.h"
+
+
+tp4GUI::tp4GUI(QWidget *parent)
+    : QMainWindow(parent), m_club();
+{
+	ui.setupUi(this);
+}
+
+tp4GUI::~tp4GUI()
+{
+
+}

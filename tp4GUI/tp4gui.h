@@ -6,6 +6,8 @@
 #include "Annuaire.h"
 #include <string>
 
+using namespace tp;
+
 class tp4GUI : public QMainWindow
 {
     Q_OBJECT
@@ -14,8 +16,10 @@ public:
     tp4GUI(QWidget *parent = 0);
     ~tp4GUI();
 
+private slots:
+	void ajouterJoueurDialog();
+
 private:
-    //tp::Annuaire m_club;
     Ui::tp4GUIClass ui;
 };
 

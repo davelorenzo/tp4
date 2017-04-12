@@ -1,0 +1,25 @@
+#include "tp4gui.h"
+#include "Joueur.h"
+#include "Entraineur.h"
+#include "Date.h"
+#include "Annuaire.h"
+#include <string>
+
+
+using namespace tp;
+using namespace util;
+
+tp4GUI::tp4GUI(QWidget *parent)
+    : QMainWindow(parent) {
+	ui.setupUi(this);
+	//QOjbect::connect();
+}
+
+tp4GUI::~tp4GUI() {
+
+}
+
+
+void tp4GUI::dialogAjouter() {
+
+}

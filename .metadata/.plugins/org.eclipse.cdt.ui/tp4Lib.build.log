@@ -1,6 +1,6 @@
-18:46:22 **** Incremental Build of configuration Debug for project tp4Lib ****
+19:43:41 **** Incremental Build of configuration Debug for project tp4Lib ****
 make all 
 make: rien à faire pour « all ».
 
-18:46:23 Build Finished (took 195ms)
+19:43:41 Build Finished (took 78ms)
 

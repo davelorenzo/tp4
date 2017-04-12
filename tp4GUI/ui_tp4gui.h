@@ -13,11 +13,15 @@
 #include <QtGui/QAction>
 #include <QtGui/QApplication>
 #include <QtGui/QButtonGroup>
+#include <QtGui/QGridLayout>
 #include <QtGui/QHeaderView>
 #include <QtGui/QMainWindow>
 #include <QtGui/QMenu>
 #include <QtGui/QMenuBar>
+#include <QtGui/QPushButton>
+#include <QtGui/QSpacerItem>
 #include <QtGui/QStatusBar>
+#include <QtGui/QTextEdit>
 #include <QtGui/QVBoxLayout>
 #include <QtGui/QWidget>
 
@@ -30,8 +34,13 @@ public:
     QAction *actionAjouter;
     QAction *actionSuprimer;
     QWidget *centralwidget;
+    QWidget *gridLayoutWidget;
+    QGridLayout *gridLayout;
+    QTextEdit *textEdit;
     QWidget *verticalLayoutWidget;
     QVBoxLayout *verticalLayout;
+    QPushButton *ajouterBouton;
+    QSpacerItem *verticalSpacer;
     QMenuBar *menubar;
     QMenu *menuFichier;
     QStatusBar *statusbar;
@@ -40,7 +49,7 @@ public:
     {
         if (tp4GUIClass->objectName().isEmpty())
             tp4GUIClass->setObjectName(QString::fromUtf8("tp4GUIClass"));
-        tp4GUIClass->resize(800, 600);
+        tp4GUIClass->resize(606, 600);
         actionQuitter = new QAction(tp4GUIClass);
         actionQuitter->setObjectName(QString::fromUtf8("actionQuitter"));
         actionAjouter = new QAction(tp4GUIClass);
@@ -49,16 +58,36 @@ public:
         actionSuprimer->setObjectName(QString::fromUtf8("actionSuprimer"));
         centralwidget = new QWidget(tp4GUIClass);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
+        gridLayoutWidget = new QWidget(centralwidget);
+        gridLayoutWidget->setObjectName(QString::fromUtf8("gridLayoutWidget"));
+        gridLayoutWidget->setGeometry(QRect(0, 0, 421, 551));
+        gridLayout = new QGridLayout(gridLayoutWidget);
+        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
+        gridLayout->setContentsMargins(0, 0, 0, 0);
+        textEdit = new QTextEdit(gridLayoutWidget);
+        textEdit->setObjectName(QString::fromUtf8("textEdit"));
+
+        gridLayout->addWidget(textEdit, 3, 0, 1, 1);
+
         verticalLayoutWidget = new QWidget(centralwidget);
         verticalLayoutWidget->setObjectName(QString::fromUtf8("verticalLayoutWidget"));
-        verticalLayoutWidget->setGeometry(QRect(0, 0, 801, 551));
+        verticalLayoutWidget->setGeometry(QRect(419, -1, 201, 551));
         verticalLayout = new QVBoxLayout(verticalLayoutWidget);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         verticalLayout->setContentsMargins(0, 0, 0, 0);
+        ajouterBouton = new QPushButton(verticalLayoutWidget);
+        ajouterBouton->setObjectName(QString::fromUtf8("ajouterBouton"));
+
+        verticalLayout->addWidget(ajouterBouton);
+
+        verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout->addItem(verticalSpacer);
+
         tp4GUIClass->setCentralWidget(centralwidget);
         menubar = new QMenuBar(tp4GUIClass);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 800, 27));
+        menubar->setGeometry(QRect(0, 0, 606, 27));
         menuFichier = new QMenu(menubar);
         menuFichier->setObjectName(QString::fromUtf8("menuFichier"));
         tp4GUIClass->setMenuBar(menubar);
@@ -84,6 +113,7 @@ public:
         actionQuitter->setText(QApplication::translate("tp4GUIClass", "Quitter", 0, QApplication::UnicodeUTF8));
         actionAjouter->setText(QApplication::translate("tp4GUIClass", "Ajouter", 0, QApplication::UnicodeUTF8));
         actionSuprimer->setText(QApplication::translate("tp4GUIClass", "Suprimer", 0, QApplication::UnicodeUTF8));
+        ajouterBouton->setText(QApplication::translate("tp4GUIClass", "Ajouter", 0, QApplication::UnicodeUTF8));
         menuFichier->setTitle(QApplication::translate("tp4GUIClass", "Fichier", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 

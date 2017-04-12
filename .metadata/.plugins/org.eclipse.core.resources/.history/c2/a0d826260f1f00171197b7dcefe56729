@@ -1,0 +1,19 @@
+#ifndef AJOUTERPERSONNEDIALOG_H
+#define AJOUTERPERSONNEDIALOG_H
+
+#include <QtGui/QDialog>
+#include "ui_ajouterpersonnedialog.h"
+
+class AjouterPersonneDialog : public QDialog
+{
+    Q_OBJECT
+
+public:
+    AjouterPersonneDialog(QWidget *parent = 0);
+    ~AjouterPersonneDialog();
+
+private:
+    Ui::AjouterPersonneDialogClass ui;
+};
+
+#endif // AJOUTERPERSONNEDIALOG_H

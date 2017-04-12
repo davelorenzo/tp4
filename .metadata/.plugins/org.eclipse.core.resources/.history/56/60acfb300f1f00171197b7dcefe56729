@@ -1,0 +1,12 @@
+#include "ajouterpersonnedialog.h"
+
+AjouterPersonneDialog::AjouterPersonneDialog(QWidget *parent)
+    : QDialog(parent)
+{
+	ui.setupUi(this);
+}
+
+AjouterPersonneDialog::~AjouterPersonneDialog()
+{
+
+}

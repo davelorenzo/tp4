@@ -1,4 +1,5 @@
 ﻿#include <iostream>
+#include <string>
 #include "Personne.h"
 #include "Joueur.h"
 #include "Date.h"
